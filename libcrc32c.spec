@@ -35,12 +35,12 @@ hardware capabilities.
 CRC32C is specified as the CRC that uses the iSCSI polynomial in RFC 3720. 
 The polynomial was introduced by G. Castagnoli, S. Braeuer and M. Herrmann.
 
-%package        %{name}-devel
+%package -n %{name}-devel
 Summary:        C++ header files and library symbolic links for %{packagename}
 Group:          Development/Libraries/C and C++
 Requires:       %{name}%{soname} = %{version}
 
-%description    %{name}-devel
+%description -n %{name}-devel
 This package contains the C++ header files and symbolic links to the shared
 libraries for %{name}. If you would like to develop programs using %{name},
 you will need to install %{name}-devel.
@@ -64,7 +64,7 @@ make all
 %{_libdir}/%{name}.so.1.1.0
 %{_libdir}/%{name}.so.1
 
-%files %{name}-devel
+%files -n %{name}-devel
 %{_includedir}/%{packagename}
 %{_libdir}/%{name}.so
 %{_libdir}/cmake/Crc32c
