@@ -70,6 +70,4 @@ make all
 %{_libdir}/cmake/Crc32c
 
 %changelog
-* Sun May 24 2020 Danilo Chang <ray2501@gmail.com> - 1.1.1
-- Initial
 
